@@ -1,15 +1,16 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense, lazy } from 'react';
 import { Navbar } from './components/layout/Navbar';
-import { Footer } from './components/layout/Footer';
 import { Hero } from './components/sections/Hero';
-import { About } from './components/sections/About';
-import { Projects } from './components/sections/Projects';
-import { TechStack } from './components/sections/TechStack';
-import { Writing } from './components/sections/Writing';
-import { Contact } from './components/sections/Contact';
 import { CustomCursor } from './components/ui/CustomCursor';
 import { ToastProvider } from './components/ui/Toast';
 import { Marquee } from './components/ui/Marquee';
+
+const About = lazy(() => import('./components/sections/About').then(m => ({ default: m.About })));
+const Projects = lazy(() => import('./components/sections/Projects').then(m => ({ default: m.Projects })));
+const TechStack = lazy(() => import('./components/sections/TechStack').then(m => ({ default: m.TechStack })));
+const Writing = lazy(() => import('./components/sections/Writing').then(m => ({ default: m.Writing })));
+const Contact = lazy(() => import('./components/sections/Contact').then(m => ({ default: m.Contact })));
+const Footer = lazy(() => import('./components/layout/Footer').then(m => ({ default: m.Footer })));
 
 function App() {
   const [progressWidth, setProgressWidth] = useState(0);
@@ -46,14 +47,18 @@ function App() {
         <main aria-label="Main Content">
           <Hero />
           <Marquee />
-          <About />
-          <Projects />
-          <TechStack />
-          <Writing />
-          <Contact />
+          <Suspense fallback={<div className="min-h-screen bg-[#060606] flex items-center justify-center"><div className="w-[8px] h-[8px] rounded-full bg-theme-accent animate-pulse" /></div>}>
+            <About />
+            <Projects />
+            <TechStack />
+            <Writing />
+            <Contact />
+          </Suspense>
         </main>
 
-        <Footer />
+        <Suspense fallback={null}>
+          <Footer />
+        </Suspense>
       </div>
     </ToastProvider>
   );
