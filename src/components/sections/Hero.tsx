@@ -92,7 +92,7 @@ export const Hero = () => {
                 transition={{ duration: 0.8, delay: 0.6 }}
             >
                 <p className="max-w-[360px] text-[#555] text-[13px] leading-[1.9]">
-                    I'm <strong className="text-theme-text font-normal">Shehryar Asif</strong> — developer and founder from Faisalabad, Pakistan. I build platforms at scale, ship Chrome extensions, publish books globally, and write code across the full stack.
+                    I'm <strong className="text-theme-text font-normal">Shehryar Asif</strong> — developer and founder from Pakistan. I build platforms at scale, ship Chrome extensions, publish books globally, and write code across the full stack.
                 </p>
                 <div className="flex gap-[36px] shrink-0">
                     <div className="text-right">

@@ -56,7 +56,9 @@ export const Footer = () => {
                         <a href="https://aitoolslibrary.online" target="_blank" rel="noopener noreferrer" className="text-[#333] no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent">AI Tools Library</a>
                         <a href="https://chromewebstore.google.com/detail/arcade-hub/cmclgehgmipfbnbiknaldecmncefchek" target="_blank" rel="noopener noreferrer" className="text-[#333] no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent">Arcade Hub ↗</a>
                         <span className="text-[#333] no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent cursor-not-allowed hidden md:block">NeuroStack</span>
-                        <span className="text-[#333] no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent cursor-not-allowed hidden md:block">Antigravity</span>
+                        <span className="text-[#333] no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent cursor-not-allowed hidden md:block">Lumina</span>
+                        <span className="text-[#333] no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent cursor-not-allowed hidden md:block">Capitalyst</span>
+
                     </div>
                 </div>
 

@@ -12,7 +12,7 @@ export const About = () => {
                         Building an <em>empire.</em>
                     </h2>
                     <p className="text-[#555] text-[14px] leading-[1.95] mb-[36px]">
-                        I'm <strong className="text-theme-text font-normal">Shehryar Asif</strong>, a full-stack developer and founder from Faisalabad, Pakistan. I build production-grade software across web, mobile, cloud, and browser environments — then I turn those skills into platforms that generate compounding revenue.
+                        I'm <strong className="text-theme-text font-normal">Shehryar Asif</strong>, a full-stack developer and founder from Pakistan. I build production-grade software across web, mobile, cloud, and browser environments — then I turn those skills into platforms that generate compounding revenue.
                         <br /><br />
                         My core thesis: <strong className="text-theme-accent font-normal">own user bases across every valuable vertical before AI makes them impossible to build cheaply.</strong> I automate everything that doesn't require judgment, and I think in decades.
                     </p>
