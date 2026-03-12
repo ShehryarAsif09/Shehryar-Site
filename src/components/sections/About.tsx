@@ -1,4 +1,5 @@
 import { AnimatedCounter, Reveal } from '../ui/Animations';
+import { EmpireVisual } from '../ui/EmpireVisual';
 
 export const About = () => {
     return (
@@ -84,7 +85,19 @@ export const About = () => {
                     </div>
                 </Reveal>
 
+                <Reveal direction="up" delay={0.2}>
+                    <div className="relative max-w-md mx-auto mt-12 md:mt-0 flex items-center justify-center">
+                        <EmpireVisual />
 
+                        {/* Status badging / Floating metadata */}
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-none">
+                            <div className="inline-flex items-center gap-[8px] bg-[#080808]/80 backdrop-blur-sm border border-theme-accent/20 px-[16px] py-[8px] text-[10px] tracking-[0.12em] uppercase text-theme-accent whitespace-nowrap -rotate-[5deg] translate-y-[100px] md:translate-y-[120px]">
+                                <div className="w-[6px] h-[6px] rounded-full bg-theme-accent animate-pulse" />
+                                Empire Core Online
+                            </div>
+                        </div>
+                    </div>
+                </Reveal>
             </div>
         </section>
     );
