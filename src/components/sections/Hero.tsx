@@ -71,7 +71,7 @@ export const Hero = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
             >
                 <div className="w-[28px] h-[1px] bg-theme-accent block" />
-                Full-Stack Developer &nbsp;·&nbsp; Founder &nbsp;·&nbsp; Publisher
+                Founder & Entrepreneur &nbsp;·&nbsp; Developer &nbsp;·&nbsp; Publisher
             </motion.div>
 
             <motion.h1

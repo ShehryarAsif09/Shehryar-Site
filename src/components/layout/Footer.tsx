@@ -86,8 +86,6 @@ export const Footer = () => {
                             <div className="text-[12px] text-[#666]">shehryarasif.me</div>
                         </div>
                         <div>
-                            <div className="text-[10px] text-[#444] tracking-[0.08em] uppercase mb-[4px]">Studying</div>
-                            <div className="text-[12px] text-[#666]">Software Engineering</div>
                         </div>
                         <div>
                             <div className="text-[10px] text-[#444] tracking-[0.08em] uppercase mb-[4px]">Primary Focus</div>
