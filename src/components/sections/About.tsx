@@ -48,41 +48,6 @@ export const About = () => {
                         </div>
                     </div>
 
-                    {/* Timeline */}
-                    <div className="relative pl-[28px]">
-                        <div className="absolute left-0 top-0 bottom-0 w-[1px] bg-gradient-to-b from-theme-accent to-transparent" />
-                        <div className="flex flex-col gap-[26px]">
-
-                            <div className="relative">
-                                <div className="absolute -left-[32px] top-[4px] w-[9px] h-[9px] bg-[#080808] border border-theme-accent rounded-full" />
-                                <span className="text-[10px] tracking-[0.1em] text-theme-accent uppercase">2022</span>
-                                <h3 className="font-syne text-[13px] font-bold text-theme-text my-[3px]">AstraZen — Marketing Director</h3>
-                                <p className="text-[12px] text-[#444] leading-[1.6]">Services startup. Built digital growth systems from scratch.</p>
-                            </div>
-
-                            <div className="relative">
-                                <div className="absolute -left-[32px] top-[4px] w-[9px] h-[9px] bg-[#080808] border border-theme-accent rounded-full" />
-                                <span className="text-[10px] tracking-[0.1em] text-theme-accent uppercase">2023</span>
-                                <h3 className="font-syne text-[13px] font-bold text-theme-text my-[3px]">NuraSkin — CEO</h3>
-                                <p className="text-[12px] text-[#444] leading-[1.6]">SEO-focused skincare brand. Proved content-to-commerce model.</p>
-                            </div>
-
-                            <div className="relative">
-                                <div className="absolute -left-[32px] top-[4px] w-[9px] h-[9px] bg-[#080808] border border-theme-accent rounded-full" />
-                                <span className="text-[10px] tracking-[0.1em] text-theme-accent uppercase">2024</span>
-                                <h3 className="font-syne text-[13px] font-bold text-theme-text my-[3px]">NeuroStack + Arcade Hub Extension</h3>
-                                <p className="text-[12px] text-[#444] leading-[1.6]">AI SaaS holding company. Built and shipped Arcade Hub to Chrome Web Store.</p>
-                            </div>
-
-                            <div className="relative">
-                                <div className="absolute -left-[32px] top-[4px] w-[9px] h-[9px] bg-theme-accent border border-theme-accent rounded-full" />
-                                <span className="text-[10px] tracking-[0.1em] text-theme-accent uppercase">2025 — Present</span>
-                                <h3 className="font-syne text-[13px] font-bold text-theme-accent my-[3px]">Publixion — Primary Focus</h3>
-                                <p className="text-[12px] text-[#555] leading-[1.6]">Global digital publishing platform. Automated pipeline. Paddle MoR. Global revenue.</p>
-                            </div>
-
-                        </div>
-                    </div>
                 </Reveal>
 
                 <Reveal direction="up" delay={0.2}>
@@ -91,14 +56,48 @@ export const About = () => {
 
                         {/* Status badging / Floating metadata */}
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-none">
-                            <div className="inline-flex items-center gap-[8px] bg-[#080808]/80 backdrop-blur-sm border border-theme-accent/20 px-[16px] py-[8px] text-[10px] tracking-[0.12em] uppercase text-theme-accent whitespace-nowrap -rotate-[5deg] translate-y-[100px] md:translate-y-[120px]">
+                            <div className="inline-flex items-center gap-[8px] bg-[#080808]/80 backdrop-blur-sm border border-theme-accent/20 px-[16px] py-[8px] text-[10px] tracking-[0.12em] uppercase text-theme-accent whitespace-nowrap -rotate-[5deg] translate-y-[130px] md:translate-y-[150px]">
                                 <div className="w-[6px] h-[6px] rounded-full bg-theme-accent animate-pulse" />
                                 Empire Core Online
                             </div>
                         </div>
                     </div>
+
+                    {/* Timeline moved here to fill right column emptiness */}
+                    <div className="mt-[80px] md:mt-[100px] relative pl-[32px] max-w-sm mx-auto md:mx-0">
+                        <div className="absolute left-0 top-0 bottom-0 w-[1px] bg-gradient-to-b from-theme-accent to-transparent" />
+                        <div className="flex flex-col gap-[32px]">
+                            <div className="relative">
+                                <div className="absolute -left-[36.5px] top-[4px] w-[9px] h-[9px] bg-[#080808] border border-theme-accent rounded-full" />
+                                <span className="text-[10px] tracking-[0.12em] text-theme-accent uppercase font-bold">2022 — Early Growth</span>
+                                <h3 className="font-syne text-[14px] font-bold text-theme-text my-[4px]">AstraZen — Marketing Director</h3>
+                                <p className="text-[12px] text-[#555] leading-[1.7]">Growth services. Built digital acquisition systems that scaled startups from seed to revenue.</p>
+                            </div>
+
+                            <div className="relative">
+                                <div className="absolute -left-[36.5px] top-[4px] w-[9px] h-[9px] bg-[#080808] border border-theme-accent rounded-full" />
+                                <span className="text-[10px] tracking-[0.12em] text-theme-accent uppercase font-bold">2023 — Validation</span>
+                                <h3 className="font-syne text-[14px] font-bold text-theme-text my-[4px]">NuraSkin — CEO</h3>
+                                <p className="text-[12px] text-[#555] leading-[1.7]">Direct-to-consumer skincare. Scaled organic traffic to validate content-to-commerce playbooks.</p>
+                            </div>
+
+                            <div className="relative">
+                                <div className="absolute -left-[36.5px] top-[4px] w-[9px] h-[9px] bg-[#080808] border border-theme-accent rounded-full" />
+                                <span className="text-[10px] tracking-[0.12em] text-theme-accent uppercase font-bold">2024 — Infrastructure</span>
+                                <h3 className="font-syne text-[14px] font-bold text-theme-text my-[4px]">NeuroStack + Arcade Hub</h3>
+                                <p className="text-[12px] text-[#555] leading-[1.7]">Systematizing AI holds. Shipped high-retention Chrome extensions and SaaS tools.</p>
+                            </div>
+
+                            <div className="relative">
+                                <div className="absolute -left-[36.5px] top-[4px] w-[9px] h-[9px] bg-theme-accent border border-theme-accent rounded-full shadow-[0_0_10px_rgba(200,245,90,0.5)]" />
+                                <span className="text-[10px] tracking-[0.12em] text-theme-accent uppercase font-bold">2025 — Present</span>
+                                <h3 className="font-syne text-[14px] font-bold text-theme-accent my-[4px]">Publixion — Expansion</h3>
+                                <p className="text-[12px] text-theme-text/80 leading-[1.7]">Automated digital publishing ecosystem. Capturing global verticals through programmatic scale.</p>
+                            </div>
+                        </div>
+                    </div>
                 </Reveal>
-            </div>
-        </section>
+            </div >
+        </section >
     );
 };
