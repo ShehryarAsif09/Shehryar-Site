@@ -5,8 +5,8 @@ export const CustomCursor = () => {
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const [isHovered, setIsHovered] = useState(false);
 
-    // Smooth springs for the outer ring trailing effect
-    const springConfig = { damping: 25, stiffness: 200, mass: 0.5 };
+    // Higher stiffness and lower damping for "instant" master feel
+    const springConfig = { damping: 20, stiffness: 450, mass: 0.4 };
     const cursorXSpring = useSpring(0, springConfig);
     const cursorYSpring = useSpring(0, springConfig);
 
@@ -32,7 +32,8 @@ export const CustomCursor = () => {
                 target.closest('.pc') ||
                 target.closest('.bc') ||
                 target.closest('.pill') ||
-                target.closest('.skill-block')
+                target.closest('.skill-block') ||
+                target.closest('.interactive')
             ) {
                 setIsHovered(true);
             } else {
@@ -61,11 +62,10 @@ export const CustomCursor = () => {
                 animate={{
                     x: mousePosition.x,
                     y: mousePosition.y,
-                    width: isHovered ? 16 : 10,
-                    height: isHovered ? 16 : 10,
+                    scale: isHovered ? 1.8 : 1,
                     backgroundColor: isHovered ? '#ff5c3a' : '#c8f55a',
                 }}
-                transition={{ type: 'tween', ease: 'easeOut', duration: 0.15 }}
+                transition={{ type: 'spring', damping: 15, stiffness: 300, mass: 0.5 }}
             />
 
             {/* Outer Ring */}
@@ -76,11 +76,17 @@ export const CustomCursor = () => {
                     y: cursorYSpring,
                 }}
                 animate={{
-                    width: isHovered ? 60 : 38,
-                    height: isHovered ? 60 : 38,
-                    borderColor: isHovered ? 'rgba(255,92,58,0.3)' : 'rgba(200,245,90,0.3)',
+                    width: isHovered ? 70 : 38,
+                    height: isHovered ? 70 : 38,
+                    borderColor: isHovered ? 'rgba(255,92,58,0.5)' : 'rgba(200,245,90,0.3)',
+                    rotate: isHovered ? 180 : 0,
+                    borderWidth: isHovered ? '2px' : '1px',
+                    borderStyle: isHovered ? 'dashed' : 'solid',
                 }}
-                transition={{ type: 'tween', ease: 'easeOut', duration: 0.3 }}
+                transition={{
+                    rotate: { duration: 0.5, ease: "easeInOut" },
+                    default: { type: 'spring', damping: 20, stiffness: 300 }
+                }}
             />
         </>
     );
