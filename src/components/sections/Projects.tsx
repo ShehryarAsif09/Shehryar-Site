@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import { Reveal } from '../ui/Animations';
+import { Modal } from '../ui/Modal';
 
 const projects = [
     {
@@ -59,50 +61,74 @@ const projects = [
     {
         id: 'astrazen',
         num: '006',
-        status: { text: 'Service — Performance', type: 'primary' },
+        status: { text: 'Status — Inactive', type: 'archived' },
         title: 'AstraZen',
-        description: 'Marketing and growth services agency. Built digital growth systems from scratch for clients delivering high-impact performance marketing.',
-        tags: ['Marketing', 'Services', 'Growth Systems'],
+        description: 'Marketing and growth services agency. Built digital growth systems for high-impact performance marketing. This project is currently no longer operational.',
+        tags: ['Marketing', 'Services', 'Systems'],
         link: '#',
         image: null,
-        className: 'bg-[#0a1200] border-theme-accent/10 hover:bg-[#0d1600] hover:border-theme-accent/30',
+        className: 'bg-[#0d0d0d] border-[#1a1a1a] hover:bg-[#111] hover:border-[#333]/20 grayscale-[0.8]',
     },
     {
         id: 'neurostack',
         num: '007',
-        status: { text: 'In Development', type: 'dev' },
+        status: { text: 'Coming Soon', type: 'dev' },
         title: 'NeuroStack',
         description: 'AI SaaS holding company housing CourseMorph, Resumind, and PromptNest — targeting productivity and career verticals.',
-        tags: ['React', 'Node.js', 'Open Source LLMs'],
+        tags: ['React', 'Node.js', 'LLMs'],
         link: '#',
         image: null,
+        isComingSoon: true,
         className: 'bg-[#0d0d0d] border-[#1a1a1a] hover:bg-[#111] hover:border-theme-accent/20',
     },
     {
         id: 'Capitalyst',
         num: '008',
-        status: { text: 'In Development', type: 'dev' },
+        status: { text: 'Coming Soon', type: 'dev' },
         title: 'Capitalyst',
-        description: 'Full-stack fintech SaaS combining professional-grade financial engines, portfolio analytics, Monte Carlo simulation, and behavioral coaching for serious wealth builders.',
-        tags: ['Next.js', 'Fintech', 'SaaS', 'Lemon Squeezy'],
+        description: 'Full-stack fintech SaaS combining professional-grade financial engines, portfolio analytics, and automated wealth management workflows.',
+        tags: ['Next.js', 'Fintech', 'SaaS'],
         link: '#',
         image: null,
+        isComingSoon: true,
         className: 'bg-[#0d0d0d] border-[#1a1a1a] hover:bg-[#111] hover:border-theme-accent/20',
     },
     {
         id: 'Lumina',
         num: '009',
-        status: { text: 'In Development', type: 'dev' },
+        status: { text: 'Coming Soon', type: 'dev' },
         title: 'Lumina',
-        description: 'AI-powered outcome generation platform. Upload a lecture PDF and get a cheat sheet before class. Describe a client problem and get a pitch deck. Built for students, professionals, and founders.',
-        tags: ['React', 'Cloudflare Workers', 'Groq', 'React Native'],
+        description: 'AI-powered outcome generation platform. Describe a problem and get a pitch deck or actionable roadmap in seconds.',
+        tags: ['React', 'Workers', 'Groq'],
         link: '#',
         image: null,
+        isComingSoon: true,
         className: 'bg-[#0d0d0d] border-[#1a1a1a] hover:bg-[#111] hover:border-theme-accent/20',
     }
 ];
 
 export const Projects = () => {
+    const [modalConfig, setModalConfig] = useState<{ isOpen: boolean; title: string; message: string }>({
+        isOpen: false,
+        title: '',
+        message: '',
+    });
+
+    const handleProjectClick = (e: React.MouseEvent, pkg: any) => {
+        if (pkg.isComingSoon || pkg.id === 'astrazen') {
+            e.preventDefault();
+            const message = pkg.id === 'astrazen'
+                ? 'This service is currently reaching its end of life and is no longer operational.'
+                : 'This platform is currently under heavy development. Stay tuned, Coming soon.';
+
+            setModalConfig({
+                isOpen: true,
+                title: pkg.title,
+                message: message
+            });
+        }
+    };
+
     return (
         <section id="projects" className="py-[120px] px-[24px] md:px-[64px] bg-[#060606]" aria-labelledby="ventures-title">
             <Reveal className="flex items-end justify-between mb-[60px] flex-wrap gap-[24px]">
@@ -129,7 +155,11 @@ export const Projects = () => {
                     }
 
                     return (
-                        <Reveal key={pkg.id} delay={i * 0.1} className={`flex flex-col min-h-[320px] p-[36px] relative overflow-hidden transition-all group no-underline border ${pkg.className}`}>
+                        <Reveal
+                            key={pkg.id}
+                            delay={i * 0.1}
+                            className={`flex flex-col min-h-[320px] p-[36px] relative overflow-hidden transition-all group no-underline border ${pkg.className}`}
+                        >
                             {/* Background Image if exists */}
                             {pkg.image && (
                                 <div className="absolute inset-0 z-0 opacity-10 grayscale group-hover:opacity-20 transition-opacity">
@@ -140,16 +170,17 @@ export const Projects = () => {
                             {/* Outer Link Wrapper functionality injected manually to maintain structural styling */}
                             <a
                                 href={pkg.link}
-                                target={pkg.link !== '#' ? "_blank" : undefined}
+                                target={(pkg.link !== '#' && !pkg.isComingSoon) ? "_blank" : undefined}
                                 rel="noopener noreferrer"
                                 className="absolute inset-0 z-10"
                                 aria-label={`View ${pkg.title} project`}
+                                onClick={(e) => handleProjectClick(e, pkg)}
                             />
 
-                            <div className="relative z-20">
+                            <div className="relative z-20 pointer-events-none">
                                 <div className="text-[10px] tracking-[0.2em] text-[#222] mb-[26px]">{pkg.num}</div>
                                 <div className={`inline-flex items-center gap-[6px] text-[10px] tracking-[0.1em] uppercase mb-[10px] ${dotColor}`}>
-                                    <span className={`w-[6px] h-[6px] rounded-full shrink-0 ${pkg.status.type !== 'archived' ? 'animate-pulse' : ''} bg-current`} />
+                                    <span className={`w-[6px] h-[6px] rounded-full shrink-0 ${['archived', 'dev'].includes(pkg.status.type) ? '' : 'animate-pulse'} bg-current`} />
                                     {pkg.status.text}
                                 </div>
                                 <h3 className="font-syne font-bold text-[20px] md:text-[28px] text-theme-text my-[10px] leading-[1.15]">
@@ -176,6 +207,13 @@ export const Projects = () => {
                     );
                 })}
             </div>
+
+            <Modal
+                isOpen={modalConfig.isOpen}
+                onClose={() => setModalConfig({ ...modalConfig, isOpen: false })}
+                title={modalConfig.title}
+                message={modalConfig.message}
+            />
         </section>
     );
 };
