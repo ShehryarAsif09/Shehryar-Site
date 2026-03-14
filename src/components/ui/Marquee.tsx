@@ -24,7 +24,7 @@ export const Marquee = () => {
                 {marqueeItems.map((item, index) => (
                     <div
                         key={index}
-                        className="flex items-center gap-[24px] px-[24px] text-[10px] tracking-[0.18em] uppercase text-[#333] whitespace-nowrap"
+                        className="flex items-center gap-[24px] px-[24px] text-[10px] tracking-[0.18em] uppercase text-theme-textMuted whitespace-nowrap"
                     >
                         <span className="w-[4px] h-[4px] rounded-full bg-theme-accent shrink-0" />
                         {item}

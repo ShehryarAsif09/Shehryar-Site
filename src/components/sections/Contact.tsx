@@ -56,14 +56,14 @@ export const Contact = () => {
                         Let's build<br />
                         something <em>real.</em>
                     </h2>
-                    <p className="text-[#444] text-[13px] leading-[1.9] mb-[36px]">
+                    <p className="text-theme-textMuted text-[13px] leading-[1.9] mb-[36px]">
                         Investor, partner, client, or fellow builder. If you see the same wave, I want to hear from you.
                     </p>
 
                     <div className="flex flex-col gap-[14px]">
                         <a
                             href="mailto:shehryarasif27@gmail.com"
-                            className="group flex flex-row items-center gap-[16px] text-[#444] no-underline text-[12px] p-[16px] border border-[#1a1a1a] transition-all hover:border-theme-accent/25 hover:text-theme-text"
+                            className="group flex flex-row items-center gap-[16px] text-theme-textMuted no-underline text-[12px] p-[16px] border border-[#1a1a1a] transition-all hover:border-theme-accent/25 hover:text-theme-text"
                         >
                             <span className="text-theme-accent text-[16px] shrink-0">✉</span>
                             <div>
@@ -75,7 +75,7 @@ export const Contact = () => {
                             href="https://linkedin.com/in/shehryarasif09"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="group flex flex-row items-center gap-[16px] text-[#444] no-underline text-[12px] p-[16px] border border-[#1a1a1a] transition-all hover:border-theme-accent/25 hover:text-theme-text"
+                            className="group flex flex-row items-center gap-[16px] text-theme-textMuted no-underline text-[12px] p-[16px] border border-[#1a1a1a] transition-all hover:border-theme-accent/25 hover:text-theme-text"
                         >
                             <span className="text-theme-accent text-[16px] shrink-0 font-bold">in</span>
                             <div>
@@ -87,7 +87,7 @@ export const Contact = () => {
                             href="https://chromewebstore.google.com/detail/arcade-hub/cmclgehgmipfbnbiknaldecmncefchek"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="group flex flex-row items-center gap-[16px] text-[#444] no-underline text-[12px] p-[16px] border border-[#1a1a1a] transition-all hover:border-theme-accent/25 hover:text-theme-text"
+                            className="group flex flex-row items-center gap-[16px] text-theme-textMuted no-underline text-[12px] p-[16px] border border-[#1a1a1a] transition-all hover:border-theme-accent/25 hover:text-theme-text"
                         >
                             <span className="text-[#5cc8ff] text-[16px] shrink-0">⬡</span>
                             <div>
@@ -108,7 +108,7 @@ export const Contact = () => {
                     <form onSubmit={handleSend} className="flex flex-col gap-[18px]" noValidate aria-live="polite">
 
                         <div>
-                            <label className="block text-[10px] tracking-[0.15em] uppercase text-[#444] mb-[8px]" htmlFor="name">Name <span className="text-theme-accentDanger ml-1" aria-hidden="true">*</span></label>
+                            <label className="block text-[10px] tracking-[0.15em] uppercase text-theme-textMuted mb-[8px]" htmlFor="name">Name <span className="text-theme-accentDanger ml-1" aria-hidden="true">*</span></label>
                             <input
                                 className="w-full bg-[#0d0d0d] border border-[#1a1a1a] text-theme-text p-[14px_18px] font-mono text-[12px] outline-none transition-colors focus:border-theme-accent focus:bg-[#0f0f0f] placeholder:text-[#2a2a2a]"
                                 type="text"
@@ -148,7 +148,7 @@ export const Contact = () => {
                         </div>
 
                         <div>
-                            <label className="block text-[10px] tracking-[0.15em] uppercase text-[#444] mb-[8px]" htmlFor="message">Message <span className="text-theme-accentDanger ml-1" aria-hidden="true">*</span></label>
+                            <label className="block text-[10px] tracking-[0.15em] uppercase text-theme-textMuted mb-[8px]" htmlFor="message">Message <span className="text-theme-accentDanger ml-1" aria-hidden="true">*</span></label>
                             <textarea
                                 className="w-full bg-[#0d0d0d] border border-[#1a1a1a] text-theme-text p-[14px_18px] font-mono text-[12px] outline-none transition-colors focus:border-theme-accent focus:bg-[#0f0f0f] placeholder:text-[#2a2a2a]"
                                 id="message"

@@ -158,7 +158,7 @@ function renderContent(raw: string) {
             return part;
         });
         return (
-            <p key={i} className="text-[14px] text-[#666] leading-[1.95] mb-[0]">
+            <p key={i} className="text-[14px] text-theme-textMuted leading-[1.95] mb-[0]">
                 {parts}
             </p>
         );
@@ -197,10 +197,10 @@ const Modal = ({ post, onClose }: { post: any, onClose: () => void }) => {
                 <div className="sticky top-0 z-10 bg-[#0d0d0d] border-b border-[#1a1a1a] px-[40px] py-[20px] flex items-center justify-between">
                     <div className="flex items-center gap-[16px]">
                         <span className="text-[10px] tracking-[0.15em] uppercase text-theme-accent">{post.tag}</span>
-                        <span className="text-[#2a2a2a]">·</span>
-                        <span className="text-[11px] text-[#333]">{post.date}</span>
-                        <span className="text-[#2a2a2a]">·</span>
-                        <span className="text-[11px] text-[#333]">{post.readTime}</span>
+                        <span className="text-theme-textDim">·</span>
+                        <span className="text-[11px] text-theme-textMuted">{post.date}</span>
+                        <span className="text-theme-textDim">·</span>
+                        <span className="text-[11px] text-theme-textMuted">{post.readTime}</span>
                     </div>
                     {/* Close button */}
                     <button
@@ -224,10 +224,10 @@ const Modal = ({ post, onClose }: { post: any, onClose: () => void }) => {
 
                 {/* Footer CTA */}
                 <div className="border-t border-[#1a1a1a] px-[40px] py-[32px] flex items-center justify-between">
-                    <p className="text-[12px] text-[#333]">Written by Shehryar Asif</p>
+                    <p className="text-[12px] text-theme-textDim">Written by Shehryar Asif</p>
                     <button
                         onClick={onClose}
-                        className="text-[11px] tracking-[0.1em] uppercase text-[#444] hover:text-theme-accent transition-colors"
+                        className="text-[11px] tracking-[0.1em] uppercase text-theme-textMuted hover:text-theme-accent transition-colors"
                     >
                         ← Back to writing
                     </button>
@@ -261,8 +261,8 @@ export const Writing = () => {
                             <div className="flex items-center justify-between mb-[18px]">
                                 <span className="text-[10px] tracking-[0.15em] uppercase text-theme-accent">{post.tag}</span>
                                 <div className="flex items-center gap-[12px]">
-                                    <span className="text-[11px] text-[#222]">{post.readTime}</span>
-                                    <span className="text-[11px] text-[#222]">{post.date}</span>
+                                    <span className="text-[11px] text-theme-textDim">{post.readTime}</span>
+                                    <span className="text-[11px] text-theme-textDim">{post.date}</span>
                                 </div>
                             </div>
 
@@ -270,11 +270,11 @@ export const Writing = () => {
                                 {post.title}
                             </h3>
 
-                            <p className="text-[12px] text-[#444] leading-[1.8] mb-[26px] text-left">
+                            <p className="text-[12px] text-theme-textMuted leading-[1.8] mb-[26px] text-left">
                                 {post.excerpt}
                             </p>
 
-                            <div className="text-[11px] tracking-[0.1em] uppercase text-[#222] flex items-center gap-[8px] transition-all group-hover:text-theme-accent group-hover:gap-[14px]">
+                            <div className="text-[11px] tracking-[0.1em] uppercase text-theme-textDim flex items-center gap-[8px] transition-all group-hover:text-theme-accent group-hover:gap-[14px]">
                                 Read more <span>→</span>
                             </div>
                         </button>

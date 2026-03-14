@@ -11,7 +11,9 @@ export default {
       colors: {
         theme: {
           bg: '#080808',
-          text: '#f0ede6',
+          text: '#fafafa',
+          textMuted: '#d4d4d8',
+          textDim: '#a1a1aa',
           accent: '#c8f55a',
           accentHover: '#f0ede6',
           accentDanger: '#ff5c3a',

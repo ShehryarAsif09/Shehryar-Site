@@ -56,7 +56,7 @@ export const Navbar = () => {
                         <a
                             key={link.name}
                             href={link.href}
-                            className="text-[11px] tracking-[0.15em] uppercase text-[#666] hover:text-theme-accent transition-colors no-underline font-medium"
+                            className="text-[11px] tracking-[0.15em] uppercase text-theme-textMuted hover:text-theme-accent transition-colors no-underline font-medium"
                         >
                             {link.name}
                         </a>
@@ -100,8 +100,8 @@ export const Navbar = () => {
 
                 {/* Mobile Bottom Info */}
                 <div className="absolute bottom-[40px] left-0 right-0 px-[40px] flex justify-between items-end">
-                    <div className="text-[10px] tracking-[0.15em] uppercase text-[#333]">Faisalabad, PK</div>
-                    <div className="text-[10px] tracking-[0.15em] uppercase text-[#333]">© 2026</div>
+                    <div className="text-[10px] tracking-[0.15em] uppercase text-theme-textDim">Faisalabad, PK</div>
+                    <div className="text-[10px] tracking-[0.15em] uppercase text-theme-textDim">© 2026</div>
                 </div>
             </div>
         </nav>

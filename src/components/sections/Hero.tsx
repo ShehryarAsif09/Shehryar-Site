@@ -91,7 +91,7 @@ export const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
             >
-                <p className="max-w-[360px] text-[#555] text-[13px] leading-[1.9]">
+                <p className="max-w-[360px] text-theme-textMuted text-[13px] leading-[1.9]">
                     I'm <strong className="text-theme-text font-normal">Shehryar Asif</strong> — developer and founder from Pakistan. I build platforms at scale, ship Chrome extensions, publish books globally, and write code across the full stack.
                 </p>
                 <div className="flex gap-[36px] shrink-0">
@@ -99,20 +99,20 @@ export const Hero = () => {
                         <span className="font-syne text-[36px] font-extrabold text-theme-accent block leading-[1]">
                             <AnimatedCounter to={7} />
                         </span>
-                        <span className="text-[10px] text-[#444] tracking-[0.1em] uppercase">Platforms</span>
+                        <span className="text-[10px] text-theme-textMuted tracking-[0.1em] uppercase">Platforms</span>
                     </div>
                     <div className="text-right">
                         <span className="font-syne text-[36px] font-extrabold text-theme-text block leading-[1]">
                             <AnimatedCounter to={20} suffix="+" />
                         </span>
-                        <span className="text-[10px] text-[#444] tracking-[0.1em] uppercase">Tech Skills</span>
+                        <span className="text-[10px] text-theme-textMuted tracking-[0.1em] uppercase">Tech Skills</span>
                     </div>
                 </div>
             </motion.div>
 
-            <div className="absolute right-[64px] bottom-[90px] [writing-mode:vertical-rl] text-[10px] tracking-[0.2em] uppercase text-[#222] flex items-center gap-[10px]">
+            <div className="absolute right-[64px] bottom-[90px] [writing-mode:vertical-rl] text-[10px] tracking-[0.2em] uppercase text-theme-textDim flex items-center gap-[10px]">
                 Scroll
-                <span className="block w-[1px] h-[48px] bg-gradient-to-b from-[#222] to-transparent" />
+                <span className="block w-[1px] h-[48px] bg-gradient-to-b from-theme-textDim to-transparent" />
             </div>
         </section>
     );

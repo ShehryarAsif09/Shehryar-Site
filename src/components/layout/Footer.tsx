@@ -20,10 +20,10 @@ export const Footer = () => {
                     <div className="font-syne font-extrabold text-[30px] text-theme-text mb-[14px] tracking-[-0.5px]">
                         SA<span className="text-theme-accent">.</span>
                     </div>
-                    <p className="text-[12px] text-[#333] leading-[1.9] max-w-[260px] mb-[26px]">
+                    <p className="text-[12px] text-theme-textMuted leading-[1.9] max-w-[260px] mb-[26px]">
                         Shehryar Asif — Full-stack developer and founder from Faisalabad, Pakistan. Building platforms that compound over years.
                     </p>
-                    <div className="inline-flex items-center gap-[8px] border border-theme-accent/20 px-[16px] py-[7px] text-[10px] tracking-[0.12em] uppercase text-[#888] mb-[24px]">
+                    <div className="inline-flex items-center gap-[8px] border border-theme-accent/20 px-[16px] py-[7px] text-[10px] tracking-[0.12em] uppercase text-theme-textMuted mb-[24px]">
                         <div className="w-[7px] h-[7px] rounded-full bg-theme-accent animate-pulse"></div>
                         Open to opportunities
                     </div>
@@ -49,48 +49,48 @@ export const Footer = () => {
 
                 {/* Ventures */}
                 <div>
-                    <h2 className="text-[10px] tracking-[0.18em] uppercase text-[#222] mb-[18px]">Ventures</h2>
+                    <h2 className="text-[10px] tracking-[0.18em] uppercase text-theme-textDim mb-[18px]">Ventures</h2>
                     <div className="flex flex-col gap-[12px]">
-                        <a href="https://publixion.com" target="_blank" rel="noopener noreferrer" className="text-[#333] no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent">Publixion</a>
-                        <a href="https://myfitnessleap.com" target="_blank" rel="noopener noreferrer" className="text-[#333] no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent">MyFitnessLeap</a>
-                        <a href="https://aitoolslibrary.online" target="_blank" rel="noopener noreferrer" className="text-[#333] no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent">AI Tools Library</a>
-                        <a href="https://chromewebstore.google.com/detail/arcade-hub/cmclgehgmipfbnbiknaldecmncefchek" target="_blank" rel="noopener noreferrer" className="text-[#333] no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent">Arcade Hub ↗</a>
-                        <span className="text-[#333] no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent cursor-not-allowed hidden md:block">NeuroStack</span>
-                        <span className="text-[#333] no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent cursor-not-allowed hidden md:block">Lumina</span>
-                        <span className="text-[#333] no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent cursor-not-allowed hidden md:block">Capitalyst</span>
+                        <a href="https://publixion.com" target="_blank" rel="noopener noreferrer" className="text-theme-textMuted no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent">Publixion</a>
+                        <a href="https://myfitnessleap.com" target="_blank" rel="noopener noreferrer" className="text-theme-textMuted no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent">MyFitnessLeap</a>
+                        <a href="https://aitoolslibrary.online" target="_blank" rel="noopener noreferrer" className="text-theme-textMuted no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent">AI Tools Library</a>
+                        <a href="https://chromewebstore.google.com/detail/arcade-hub/cmclgehgmipfbnbiknaldecmncefchek" target="_blank" rel="noopener noreferrer" className="text-theme-textMuted no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent">Arcade Hub ↗</a>
+                        <span className="text-theme-textDim no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent cursor-not-allowed hidden md:block">NeuroStack</span>
+                        <span className="text-theme-textDim no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent cursor-not-allowed hidden md:block">Lumina</span>
+                        <span className="text-theme-textDim no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent cursor-not-allowed hidden md:block">Capitalyst</span>
 
                     </div>
                 </div>
 
                 {/* Navigate */}
                 <nav aria-label="Footer Navigation">
-                    <h2 className="text-[10px] tracking-[0.18em] uppercase text-[#222] mb-[18px]">Navigate</h2>
+                    <h2 className="text-[10px] tracking-[0.18em] uppercase text-theme-textDim mb-[18px]">Navigate</h2>
                     <ul className="flex flex-col gap-[12px] list-none">
-                        <li><a href="#about" className="text-[#333] no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent">About</a></li>
-                        <li><a href="#projects" className="text-[#333] no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent">Ventures</a></li>
-                        <li><a href="#techstack" className="text-[#333] no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent">Stack</a></li>
-                        <li><a href="#blog" className="text-[#333] no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent">Writing</a></li>
-                        <li><a href="#contact" className="text-[#333] no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent">Contact</a></li>
+                        <li><a href="#about" className="text-theme-textMuted no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent">About</a></li>
+                        <li><a href="#projects" className="text-theme-textMuted no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent">Ventures</a></li>
+                        <li><a href="#techstack" className="text-theme-textMuted no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent">Stack</a></li>
+                        <li><a href="#blog" className="text-theme-textMuted no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent">Writing</a></li>
+                        <li><a href="#contact" className="text-theme-textMuted no-underline text-[12px] leading-[1.5] transition-colors hover:text-theme-accent">Contact</a></li>
                         <li><a href="#top" className="text-theme-accent no-underline text-[12px] leading-[1.5] mt-[8px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-theme-accent">Back to top ↑</a></li>
                     </ul>
                 </nav>
 
                 {/* Status panel */}
                 <div>
-                    <h2 className="text-[10px] tracking-[0.18em] uppercase text-[#222] mb-[18px]">Status</h2>
+                    <h2 className="text-[10px] tracking-[0.18em] uppercase text-theme-textDim mb-[18px]">Status</h2>
                     <div className="flex flex-col gap-[16px]">
                         <div>
-                            <div className="text-[10px] text-[#444] tracking-[0.08em] uppercase mb-[4px]">Location</div>
-                            <div className="text-[12px] text-[#666]">Faisalabad, Pakistan</div>
+                            <div className="text-[10px] text-theme-textDim tracking-[0.08em] uppercase mb-[4px]">Location</div>
+                            <div className="text-[12px] text-theme-textMuted">Faisalabad, Pakistan</div>
                         </div>
                         <div>
-                            <div className="text-[10px] text-[#444] tracking-[0.08em] uppercase mb-[4px]">Domain</div>
-                            <div className="text-[12px] text-[#666]">shehryarasif.me</div>
+                            <div className="text-[10px] text-theme-textDim tracking-[0.08em] uppercase mb-[4px]">Domain</div>
+                            <div className="text-[12px] text-theme-textMuted">shehryarasif.me</div>
                         </div>
                         <div>
                         </div>
                         <div>
-                            <div className="text-[10px] text-[#444] tracking-[0.08em] uppercase mb-[4px]">Primary Focus</div>
+                            <div className="text-[10px] text-theme-textDim tracking-[0.08em] uppercase mb-[4px]">Primary Focus</div>
                             <div className="text-[12px] text-theme-accent">Publixion</div>
                         </div>
                     </div>
@@ -99,8 +99,8 @@ export const Footer = () => {
 
             {/* Footer bottom */}
             <div className="border-t border-[#111] py-[22px] px-[24px] md:px-[64px] flex items-center justify-between flex-wrap gap-[12px] relative z-10">
-                <p className="text-[11px] text-[#1e1e1e]">© {new Date().getFullYear()} Shehryar Asif. All rights reserved.</p>
-                <p className="text-[11px] text-[#1e1e1e]">Built with intent. Deployed at shehryarasif.me</p>
+                <p className="text-[11px] text-theme-textDim">© {new Date().getFullYear()} Shehryar Asif. All rights reserved.</p>
+                <p className="text-[11px] text-theme-textDim">Built with intent. Deployed at shehryarasif.me</p>
             </div>
         </footer>
     );

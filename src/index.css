@@ -109,6 +109,6 @@
 
   /* Interactive Pill */
   .pill {
-    @apply border border-theme-border px-[14px] py-[5px] text-[10px] tracking-[0.08em] text-[#444] transition-all duration-[250ms] cursor-default hover:border-theme-accent hover:text-theme-accent;
+    @apply border border-theme-border px-[14px] py-[5px] text-[10px] tracking-[0.08em] text-theme-textMuted transition-all duration-[250ms] cursor-default hover:border-theme-accent hover:text-theme-accent;
   }
 }

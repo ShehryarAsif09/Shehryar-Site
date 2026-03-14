@@ -9,8 +9,8 @@ const SkillBar = ({ label, level, percentage }: { label: string, level: string, 
     return (
         <div className="mb-[16px] last:mb-0" ref={ref}>
             <div className="flex justify-between mb-[6px]">
-                <span className="text-[12px] text-[#ddd]">{label}</span>
-                <span className={`text-[10px] ${level === 'Intermediate' || level === 'Learning' ? 'text-[#888]' : 'text-theme-accent'}`}>{level}</span>
+                <span className="text-[12px] text-theme-text/90">{label}</span>
+                <span className={`text-[10px] ${level === 'Intermediate' || level === 'Learning' ? 'text-theme-textMuted' : 'text-theme-accent'}`}>{level}</span>
             </div>
             <div
                 className="h-[2px] bg-[#1a1a1a] mt-[10px]"
@@ -38,7 +38,7 @@ export const TechStack = () => {
                     Real skills.<br />
                     <em>Real</em> depth.
                 </h2>
-                <p className="text-[#444] text-[13px] leading-[1.85] max-w-[520px] mb-[72px]">
+                <p className="text-theme-textMuted text-[13px] leading-[1.85] max-w-[520px] mb-[72px]">
                     Not AI buzzwords — languages, frameworks, and systems I've actually shipped production code in.
                 </p>
             </Reveal>
@@ -102,7 +102,7 @@ export const TechStack = () => {
                 ].map((infra) => (
                     <div key={infra.name} className="bg-[#0d0d0d] py-[18px] px-[24px] flex items-center gap-[12px] flex-1 min-w-[160px] transition-colors hover:bg-[#101000]">
                         <span className="text-theme-accent text-[16px]">{infra.icon}</span>
-                        <span className="text-[12px] text-[#666]">{infra.name}</span>
+                        <span className="text-[12px] text-theme-textMuted">{infra.name}</span>
                     </div>
                 ))}
             </Reveal>

@@ -139,7 +139,7 @@ export const Projects = () => {
                         <em>built</em> & own.
                     </h2>
                 </div>
-                <p className="max-w-[260px] text-[#444] text-[12px] leading-[1.9]">
+                <p className="max-w-[260px] text-theme-textMuted text-[12px] leading-[1.9]">
                     Each vertical targeted deliberately. Together they compound.
                 </p>
             </Reveal>
@@ -151,7 +151,7 @@ export const Projects = () => {
                         case 'primary': dotColor = 'bg-theme-accent text-theme-accent'; break;
                         case 'ext': dotColor = 'bg-theme-accentBlue text-theme-accentBlue'; break;
                         case 'dev': dotColor = 'bg-theme-accentWarning text-theme-accentWarning'; break;
-                        case 'archived': dotColor = 'bg-[#333] text-[#333]'; break;
+                        case 'archived': dotColor = 'bg-theme-textDim text-theme-textDim'; break;
                     }
 
                     return (
@@ -178,7 +178,7 @@ export const Projects = () => {
                             />
 
                             <div className="relative z-20 pointer-events-none">
-                                <div className="text-[10px] tracking-[0.2em] text-[#222] mb-[26px]">{pkg.num}</div>
+                                <div className="text-[10px] tracking-[0.2em] text-theme-textDim mb-[26px]">{pkg.num}</div>
                                 <div className={`inline-flex items-center gap-[6px] text-[10px] tracking-[0.1em] uppercase mb-[10px] ${dotColor}`}>
                                     <span className={`w-[6px] h-[6px] rounded-full shrink-0 ${['archived', 'dev'].includes(pkg.status.type) ? '' : 'animate-pulse'} bg-current`} />
                                     {pkg.status.text}
@@ -186,13 +186,13 @@ export const Projects = () => {
                                 <h3 className="font-syne font-bold text-[20px] md:text-[28px] text-theme-text my-[10px] leading-[1.15]">
                                     {pkg.title}
                                 </h3>
-                                <p className="text-[12px] text-[#555] leading-[1.8] flex-1 mb-[22px]">
+                                <p className="text-[12px] text-theme-textMuted leading-[1.8] flex-1 mb-[22px]">
                                     {pkg.description}
                                 </p>
 
                                 <div className="flex flex-wrap gap-[7px] mt-auto">
                                     {pkg.tags.map(tag => (
-                                        <span key={tag} className="text-[9px] tracking-[0.07em] uppercase text-[#2a2a2a] border border-[#1e1e1e] px-[9px] py-[3px] transition-colors group-hover:border-theme-accent/20 group-hover:text-theme-accent/50">
+                                        <span key={tag} className="text-[9px] tracking-[0.07em] uppercase text-theme-textDim border border-theme-border px-[9px] py-[3px] transition-colors group-hover:border-theme-accent/20 group-hover:text-theme-accent/50">
                                             {tag}
                                         </span>
                                     ))}
@@ -200,7 +200,7 @@ export const Projects = () => {
                             </div>
 
                             {/* Arrow Icon */}
-                            <div className="absolute top-[28px] right-[28px] text-[15px] text-[#222] opacity-0 -translate-x-[6px] translate-y-[6px] transition-all group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:text-theme-accent pointer-events-none z-20">
+                            <div className="absolute top-[28px] right-[28px] text-[15px] text-theme-textDim opacity-0 -translate-x-[6px] translate-y-[6px] transition-all group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:text-theme-accent pointer-events-none z-20">
                                 ↗
                             </div>
                         </Reveal>

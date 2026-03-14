@@ -11,7 +11,7 @@ export const About = () => {
                         Not building a startup.<br />
                         Building an <em>empire.</em>
                     </h2>
-                    <p className="text-[#555] text-[14px] leading-[1.95] mb-[36px]">
+                    <p className="text-theme-textMuted text-[14px] leading-[1.95] mb-[36px]">
                         I'm <strong className="text-theme-text font-normal">Shehryar Asif</strong>, a full-stack developer and founder from Pakistan. I build production-grade software across web, mobile, cloud, and browser environments — then I turn those skills into platforms that generate compounding revenue.
                         <br /><br />
                         My core thesis: <strong className="text-theme-accent font-normal">own user bases across every valuable vertical before AI makes them impossible to build cheaply.</strong> I automate everything that doesn't require judgment, and I think in decades.
@@ -29,21 +29,21 @@ export const About = () => {
                             <span className="font-syne text-[30px] font-extrabold text-theme-accent block leading-[1]">
                                 <AnimatedCounter to={7} suffix="+" />
                             </span>
-                            <span className="text-[10px] text-[#444] tracking-[0.1em] uppercase">Platforms</span>
+                            <span className="text-[10px] text-theme-textMuted tracking-[0.1em] uppercase">Platforms</span>
                             <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-theme-accent to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
                         </div>
                         <div className="bg-[#0d0d0d] p-[20px] md:p-[28px] text-center border border-transparent transition-colors hover:border-theme-accent/25 relative overflow-hidden group">
                             <span className="font-syne text-[30px] font-extrabold text-theme-text block leading-[1]">
                                 <AnimatedCounter to={55} suffix="+" />
                             </span>
-                            <span className="text-[10px] text-[#444] tracking-[0.1em] uppercase">Pubs/month</span>
+                            <span className="text-[10px] text-theme-textMuted tracking-[0.1em] uppercase">Pubs/month</span>
                             <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-theme-accent to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
                         </div>
                         <div className="bg-[#0d0d0d] p-[20px] md:p-[28px] text-center border border-transparent transition-colors hover:border-theme-accent/25 relative overflow-hidden group">
                             <span className="font-syne text-[30px] font-extrabold text-theme-text block leading-[1]">
                                 <AnimatedCounter to={3} suffix="yr" />
                             </span>
-                            <span className="text-[10px] text-[#444] tracking-[0.1em] uppercase">Building</span>
+                            <span className="text-[10px] text-theme-textMuted tracking-[0.1em] uppercase">Building</span>
                             <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-theme-accent to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
                         </div>
                     </div>
@@ -71,21 +71,21 @@ export const About = () => {
                                 <div className="absolute -left-[36.5px] top-[4px] w-[9px] h-[9px] bg-[#080808] border border-theme-accent rounded-full" />
                                 <span className="text-[10px] tracking-[0.12em] text-theme-accent uppercase font-bold">2022 — Early Growth</span>
                                 <h3 className="font-syne text-[14px] font-bold text-theme-text my-[4px]">AstraZen — Marketing Director</h3>
-                                <p className="text-[12px] text-[#555] leading-[1.7]">Growth services. Built digital acquisition systems that scaled startups from seed to revenue.</p>
+                                <p className="text-[12px] text-theme-textMuted leading-[1.7]">Growth services. Built digital acquisition systems that scaled startups from seed to revenue.</p>
                             </div>
 
                             <div className="relative">
                                 <div className="absolute -left-[36.5px] top-[4px] w-[9px] h-[9px] bg-[#080808] border border-theme-accent rounded-full" />
                                 <span className="text-[10px] tracking-[0.12em] text-theme-accent uppercase font-bold">2023 — Validation</span>
                                 <h3 className="font-syne text-[14px] font-bold text-theme-text my-[4px]">NuraSkin — CEO</h3>
-                                <p className="text-[12px] text-[#555] leading-[1.7]">Direct-to-consumer skincare. Scaled organic traffic to validate content-to-commerce playbooks.</p>
+                                <p className="text-[12px] text-theme-textMuted leading-[1.7]">Direct-to-consumer skincare. Scaled organic traffic to validate content-to-commerce playbooks.</p>
                             </div>
 
                             <div className="relative">
                                 <div className="absolute -left-[36.5px] top-[4px] w-[9px] h-[9px] bg-[#080808] border border-theme-accent rounded-full" />
                                 <span className="text-[10px] tracking-[0.12em] text-theme-accent uppercase font-bold">2024 — Infrastructure</span>
                                 <h3 className="font-syne text-[14px] font-bold text-theme-text my-[4px]">NeuroStack + Arcade Hub</h3>
-                                <p className="text-[12px] text-[#555] leading-[1.7]">Systematizing AI holds. Shipped high-retention Chrome extensions and SaaS tools.</p>
+                                <p className="text-[12px] text-theme-textMuted leading-[1.7]">Systematizing AI holds. Shipped high-retention Chrome extensions and SaaS tools.</p>
                             </div>
 
                             <div className="relative">
