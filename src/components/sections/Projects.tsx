@@ -93,7 +93,6 @@ const projects = [
         isComingSoon: true,
         className: 'bg-[#0d0d0d] border-[#1a1a1a] hover:bg-[#111] hover:border-theme-accent/20',
     },
-    
     {
         id: 'Lumina',
         num: '009',
@@ -105,7 +104,7 @@ const projects = [
         image: null,
         isComingSoon: true,
         className: 'bg-[#0d0d0d] border-[#1a1a1a] hover:bg-[#111] hover:border-theme-accent/20',
-    }.
+    },
     {
     id: 'toolzip',
     num: '010',
