@@ -93,6 +93,7 @@ const projects = [
         isComingSoon: true,
         className: 'bg-[#0d0d0d] border-[#1a1a1a] hover:bg-[#111] hover:border-theme-accent/20',
     },
+    
     {
         id: 'Lumina',
         num: '009',
@@ -104,7 +105,18 @@ const projects = [
         image: null,
         isComingSoon: true,
         className: 'bg-[#0d0d0d] border-[#1a1a1a] hover:bg-[#111] hover:border-theme-accent/20',
-    }
+    }.
+    {
+    id: 'toolzip',
+    num: '010',
+    status: { text: 'Active — Growing', type: 'primary' },
+    title: 'ToolZip',
+    description: '75-tool free utility site across text, developer, converter, and calculator verticals. 107 indexed pages, 98 performance / 100 SEO score. Automated blog pipeline via Groq + GSC API pushes keyword-targeted articles to GitHub on cron. 20+ DA60 backlinks from launch. AdSense monetization roadmap active.',
+    tags: ['75 Tools', 'Cloudflare Pages', 'GSC API', 'Groq', 'SEO', 'AdSense Pipeline'],
+    link: 'https://toolzip.online',
+    image: null,
+    className: 'bg-[#0a0d00] border-theme-accent/10 hover:bg-[#0d1100] hover:border-theme-accent/30',
+}
 ];
 
 export const Projects = () => {
